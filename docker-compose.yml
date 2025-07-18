@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  tw3-front:
+    image: ghcr.io/jclmantilla/tw3-front:latest
+    container_name: tw3-front
+    env_file:
+      - .env
+    environment:
+      - VITE_TW3_BACKEND_HOST=tw3-back
+      - VITE_TW3_BACKEND_PORT=270
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    networks:
+      - tw3-network
+
+  tw3-back:
+    image: ghcr.io/jclmantilla/tw3-back:latest
+    container_name: tw3-back
+    env_file:
+      - .env
+    restart: unless-stopped
+    ports:
+      - "270:270"
+    networks:
+      - tw3-network
+
+networks:
+  tw3-network:
+    driver: bridge
