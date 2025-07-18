@@ -85,7 +85,7 @@ This setup allows for safe, repeatable, and scalable deployments in any Kubernet
 
 # Azure CI/CD
 
-I have never used Azure services however, I know that my CI/CD practice can be implemented and it is a standard practice usingw the following services:
+I have never used Azure services however, however, I know for a fact that my CI/CD strategy are a standard of the industry and can be easily implemented in Azure using the following services:
 
 Azure Kubernetes Service (AKS): Managed Kubernetes cluster
 Azure Container Registry (ACR): Docker image registry
