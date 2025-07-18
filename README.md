@@ -3,6 +3,15 @@
 
 Hello! This is the main repo for the TW3 case study. Here we will answer the questions of the case study and show the project and the CI/CD workflow. This repository is meant to serve as a way for you to test the app youself very easily, however, it is also meant to illustrate later how the CI/CD srategy will be. 
 
+
+Here are some key insights:
+
+- Error handling from front to avoid breaking the app on backend fails
+- Logging of exceptions in containers can be easily catched by a logging monitor such as https://www.bugsnag.com This can be used to track payloads and request of users and more!
+- App designed for kubernetes
+- env variables for security, easily managed by .env files which is a standard practice compatible with any secrets service
+
+
 As you might know already, the frontend and the backend are isolated and developed in different repositories (as they should), and are found in the following repositories:
 
 front
