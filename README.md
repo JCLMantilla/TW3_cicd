@@ -29,6 +29,7 @@ We have a ```prod.docker-compose.yml``` file that will be in charge of pulling t
 
 To start the program just run ```docker compose up ```, you will able to acess the chat in ```http://localhost:3000``` on your browser and test it if you set up valid API keys. Here is how it works:
 
+![ScreenRecording2025-07-18at10 13 35-ezgif com-optimize](https://github.com/user-attachments/assets/a43d27e5-cb5b-4c6b-a6a5-c82c2a9b462e)
 
 
 
